@@ -1,0 +1,253 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff0000;
+    transition: opacity 0.5s, visibility 0.5s;
+    animation: rojonegro 0.1s infinite;
+}
+
+@keyframes rojonegro {
+    from { background: #ff0000;}
+    to {background: #33ff00;}
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #00ffe1;
+    border-radius: 50%;
+    border-top-color:  blue;
+    animation: loading 0.001s ease infinite;
+}
+
+@keyframes loading {
+    from { transform: rotate(0turn)}
+    to { transform: rotate(1turn);}
+}
+
+/*
+.card{
+    max-width: 350px;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card .header{
+    display: flex;
+    align-items: center;
+}
+
+.card .header .img{
+    height: 70px;
+    width: 70px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .details{
+    margin-left: 20px;
+}
+
+.details span{
+    background: #d9d9d9;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.details .name{
+    width: 100px;
+    height: 15px;
+}
+
+.details .about{
+    widht: 150px;
+    height: 13px;
+    margin-top: 10px;
+}
+
+.card .content{
+    margin: 25px 0;
+}
+
+.content .line{
+    background: #d9d9d9;
+    height: 13px;
+    border-radius: 10px;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.content .line-1{
+    width: calc(100% - 15%);
+}
+
+.content .line-3{
+    width: calc(100% - 40%);
+}
+.card .btns{
+    display: flex;
+}
+
+.card .btns .btn{
+    height: 45px;
+    width: 100%;
+    background: #d9d9d9;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btns .btn-1{
+    margin-right: 8px;
+}
+
+.btns .btn-2{
+    margin-left: 8px;
+}
+
+.card .header .img::before,
+.details span::before,
+.content .line::before,
+.btns .btn::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0,0,0,0.05) 20%, #d9d9d9 40%, #d9d9d9 100%);
+    background-size: 450px 400px;
+    background-repeat: no-repeat;
+    animation: shimmer 1s linear infinite;
+}
+
+.details span::before,
+.btns .btn-2::before{
+    animation-delay: 0.2s;
+}
+
+@keyframes shimmer {
+    0%{
+        background-position: -450px 0;
+    }
+    100%{
+        background-position: 450px 0;
+    }
+}
+    */
+
+body{
+    background-image: url("imagenes/wave2.gif");
+    background-repeat: repeat;
+    background-size: 100%;
+    
+}
+
+.superdiv{
+    display: flex;
+    align-items: center;
+}
+
+.saludos{
+    max-width: fit-content;
+    margin-left: 2%;
+    margin-right: 2%;
+    align-content: center;
+    background-color: black;
+    padding: 20px;
+    border: 4px solid yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin-bottom: 2%;
+    width: 70%;
+}
+
+.div2{
+
+    background-color: brown;
+    padding: 25px;
+    border: 4px solid yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.div3{
+
+    background-color: brown;
+    padding: 20px;
+    border: 4px solid yellow;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin-bottom: 1%;
+}
+
+.div4{
+    font-size: 10px;
+    background-color: brown;
+    padding: 20px;
+    border: 4px solid yellow;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    
+}
+
+
+.p1{
+    text-align: left;
+    padding-left: 3%;
+
+}
+
+.p2{
+    text-align: right;
+    padding-right: 3%;
+}
+
+.abreme{
+        font-size: 10px;
+        align-items: right;
+}
+
+hr {
+  border-top: 40px dashed red;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.hr1{
+    border-top: 10px solid blue;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.bucle{
+    padding-left: 25px;
+}
+
+.cockroach{
+    padding-left: 10%;
+}

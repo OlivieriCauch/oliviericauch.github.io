@@ -1,0 +1,11 @@
+body{
+    background-image: url("imagenes/psicodelicPC.gif");
+    background-repeat: repeat;
+    background-size: 7%;
+    text-align: center;
+    font-size: 100px;
+}
+
+h2{
+    font-size: 60px;
+}
